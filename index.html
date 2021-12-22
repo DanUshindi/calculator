@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <style>
+      .footer { font-size: 11px; text-align: center; }
+      .footer a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+
+    <header class="header">
+
+      <h1 class="title">
+        calc
+      </h1>
+
+      <section class="theme-switcher">
+
+        <h2 class="theme-title">
+          theme
+        </h2>
+
+        <section class="themes">
+          <section class="nums">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+          </section>
+        </section>
+
+      </section>
+
+    </header>
 
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main class="main">
+
+      <section class="screen">
+        0
+      </section>
+
+      <section class="pad">
+        <button type="button" class="button white" id="zero" value="0"></button>
+        <button type="button" class="button white" id="one" value="1">1</button>
+        <button type="button" class="button white" id="two" value="2">2</button>
+        <button type="button" class="button white" id="three" value="3">3</button>
+        <button type="button" class="button white" id="four" value="4">4</button>
+        <button type="button" class="button white" id="five" value="5">5</button>
+        <button type="button" class="button white" id="six" value="6">6</button>
+        <button type="button" class="button white" id="seven" value="7">7</button>
+        <button type="button" class="button white" id="eight" value="8">8</button>
+        <button type="button" class="button white" id="nine" value="9">9</button>
+        <button type="button" class="button white" id="delete" value="del">del</button>
+        <button type="button" class="button white" id="plus" value="+">+</button>
+        <button type="button" class="button white" id="minus" value="-">-</button>
+        <button type="button" class="button white" id="times" value="x">x</button>
+        <button type="button" class="button white" id="divide" value="/">/</button>
+        <button type="button" class="button white" id="dot" value=".">.</button>
+        <button type="button" class="button white" id="reset" value="reset">reset</button>
+        <button type="button" class="button white" id="equal" value="=">=</button>
+      </section>
+
+    </main>
+
+
+    
+    <footer class="footer">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>

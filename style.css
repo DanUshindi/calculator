@@ -190,6 +190,7 @@ body {
     font-size: 28px;
     font-weight: var(--font-weight);
     text-align: center;
+    z-index: 10;
 }
 
 .white {

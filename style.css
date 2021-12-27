@@ -310,3 +310,45 @@ body {
     font-size: 10px;
     color: #fff;
 }
+
+
+@media (min-width: 1024px) {
+    body {
+        padding: 5em 30em;
+    }
+
+    .header {
+        height: 6em;
+    }
+
+    .themes {
+        height: 80%;
+    }
+
+    .selector {
+        height: 2em;
+        border-radius: 12px;
+    }
+    
+    .selector::after {
+        height: 1em;
+        width: 1em;
+        top: 4px;
+        left: 8px;
+        border-radius: 50%;
+        background-color: var(--red-key-bg);
+    }
+
+    .main {
+        height: 65vh;
+    }
+
+    .pad {
+        height: 80%;
+        padding: 1em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(4, minmax(20px, 100px));
+        grid-template-rows: repeat(5, minmax(20px, 80px));
+    }
+}

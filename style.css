@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Spartan");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700;800&display=swap');
 
 
 *,
@@ -33,10 +33,15 @@
     --font-family: 'Spartan', 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--main-bg);
     color: var(--white);
     font-family: var(--font-family);
+    font-weight: var(--font-weight);
     padding: 0 1.5em;
     display: flex;
     flex-direction: column;
@@ -44,6 +49,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -56,19 +62,62 @@ body {
     margin: .5em 0;
 }
 
+.title {
+    font-size: 36px;
+}
+
 .theme-switcher {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
-    width: 6em;
+    align-items: center;
+    width: 10em;
+    height: 100%;
+}
+
+.theme-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.themes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 55%;
+    width: 5.5em;
 }
 
 .nums {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 40%;
+    width: 65%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.selector {
+    width: inherit;
+    height: 1.75em;
+    background-color: var(--toggle-key-bg);
+    border-radius: 12px;
+    position: relative;
+}
+
+.selector::after {
+    content: '';
+    position: absolute;
+    height: 1.15em;
+    width: 1.15em;
+    top: 4px;
+    left: 8px;
+    border-radius: 50%;
+    background-color: var(--red-key-bg);
 }
 
 
@@ -76,7 +125,7 @@ body {
 
 .main {
     width: 100%;
-    height: 75vh;
+    height: 77vh;
     margin-bottom: 2em;
 }
 
@@ -87,22 +136,79 @@ body {
     text-align: right;
     background-color: var(--screen-bg);
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.calcs {
+    height: 64.5%;
+    width: 95%;
+    padding: .25em;
+    display: flex;
     justify-content: end;
     align-items: center;
-    padding: 0.5em;
-    border-radius: var(--radius);
+    text-align: end;
+    font-size: 24px;
+}
+
+.separation {
+    height: .5%;
+    width: 92%;
+    background-color: var(--main-bg);
+}
+
+.results {
+    height: 35%;
+    width: 95%;
+    padding: .25em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+    font-size: 20px;
 }
 
 .pad {
     width: 100%;
     height: 82.5%;
-    padding: 1.25em;
+    padding: 1em;
     border-radius: var(--radius);
     background-color: var(--toggle-key-bg);
     display: grid;
-    gap: .75em;
-    grid-template-columns: repeat(4, minmax(25px, 80px));
-    grid-template-rows: repeat(5, minmax(25px, 80px));
+    gap: .85em;
+    grid-template-columns: repeat(4, minmax(20px, 80px));
+    grid-template-rows: repeat(5, minmax(20px, 80px));
+}
+
+.button {
+    border-radius: .25em;
+    border-style: none;
+    color: var(--white);
+    font-size: 28px;
+    font-weight: var(--font-weight);
+    text-align: center;
+}
+
+.white {
+    background-color: var(--orange-key-bg);
+    color: var(--text-blue);
+    box-shadow: 0 4px var(--orange-key-s);
+}
+
+.blue {
+    background-color: var(--blue-key-bg);
+    box-shadow: 0 4px var(--blue-key-s);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.red {
+    background-color: var(--red-key-bg);
+    box-shadow: 0 4px var(--red-key-s);
 }
 
 #reset {

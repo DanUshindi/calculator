@@ -55,4 +55,4 @@ His name is Jonathan.
 Here are his social links:
 
 - Frontend Mentor - [@jsivahera](https://www.frontendmentor.io/profile/jsivahera)
--Twitter - [@jsivahera] (https://www.twitter.com/jsivahera)
+- Twitter - [@jsivahera] (https://www.twitter.com/jsivahera)

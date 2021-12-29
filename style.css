@@ -200,6 +200,10 @@ body {
     box-shadow: 0 4px var(--orange-key-s);
 }
 
+.no-shadow {
+    box-shadow: 0 0 transparent;
+}
+
 .blue {
     background-color: var(--blue-key-bg);
     box-shadow: 0 4px var(--blue-key-s);

@@ -50,7 +50,7 @@ Users should be able to:
 ## Acknowledgments
 
 I have worked on this project with a genius.
-His name is Jonathan.
+His name is Jonathan
 Here are his social links:
 
 - Frontend Mentor - [@jsivahera](https://www.frontendmentor.io/profile/jsivahera)
